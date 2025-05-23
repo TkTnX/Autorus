@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АВТОРУСЬ TANK</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="container header">
+      <a class="header__logo" href="/">
+        <img src="/src/images/logo.svg" alt="" />
+      </a>
+      <div class="header__wrapper">
+        <!-- TOP -->
+        <div class="header__top">
+          <p class="header__item">
+            <img src="/src/images/icons/marker-pin.svg" alt="Location" />
+            <span
+              >Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</span
+            >
+          </p>
+          <div class="header__controls">
+            <button class="header__item header__control">
+              <img src="/src/images/icons/settings.svg" alt="Записаться" />
+              Записаться на сервис
+            </button>
+            <button class="header__item header__control">
+              <img src="/src/images/icons/speedometer.svg" alt="Тест-драйв" />
+              Тест-драйв
+            </button>
+          </div>
+        </div>
+        <!-- BOTTOM -->
+        <div class="header__bottom">
+          <div class="header__info">
+            <h6>АВТОРУСЬ TANK</h6>
+            <div class="header__devider"></div>
+            <p>Официальный дилер</p>
+          </div>
+          <div class="header__phone">
+            <div class="header__phone-text">
+              <a class="header__phone-link" href="tel:+79999999999"
+                >+7 (999) 999-99-99</a
+              >
+              <div class="header__phone-status">
+                <div class="header__green-dot"></div>
+                <span>Мы на связи</span>
+              </div>
+            </div>
+            <a class="button" href="tel:+79999999999">
+              <img
+                src="/src/images/icons/phone-incoming.svg"
+                alt="Заказать звонок"
+              />
+              Заказать звонок
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <p class="hero__subtitle">Улучшим любые условия</p>
+          <h1 class="hero__title">TANK 500</h1>
+          <p class="hero__subtitle">Осталось всего 5 автомобилей</p>
+          <button class="button hero__button">
+            Получить предложение
+            <img
+              src="/src/images/icons/chevron-right.svg"
+              alt="Получить предложение"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!-- TIMER -->
+      <section class="container timer">
+        <h2>Срок действия спецпредложения:</h2>
+        <div class="timer__wrapper">
+          <div class="timer__item">
+            <svg class="timer__circle" width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40" />
+              <circle class="progress" cx="45" cy="45" r="40" />
+            </svg>
+            <span class="timer__number" id="timerDays">3</span>
+            <span class="timer__text">Дней</span>
+          </div>
+          <p class="timer__devider">:</p>
+          <div class="timer__item">
+            <svg class="timer__circle" width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40" />
+              <circle class="progress" cx="45" cy="45" r="40" />
+            </svg>
+            <span class="timer__number" id="timerHours">06</span>
+            <span class="timer__text">Часов</span>
+          </div>
+          <p class="timer__devider">:</p>
+
+          <div class="timer__item">
+            <svg class="timer__circle" width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40" />
+              <circle class="progress" cx="45" cy="45" r="40" />
+            </svg>
+            <span class="timer__number" id="timerMinutes">14</span>
+            <span class="timer__text">Минут</span>
+          </div>
+          <p class="timer__devider">:</p>
+
+          <div class="timer__item">
+            <svg class="timer__circle" width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40" />
+              <circle class="progress" cx="45" cy="45" r="40" />
+            </svg>
+            <span class="timer__number" id="timerSeconds">55</span>
+            <span class="timer__text">Секунд</span>
+          </div>
+        </div>
+        <button class="button">
+          Узнать цену с выгодами
+          <img
+            src="/src/images/icons/chevron-right.svg"
+            alt="Узнать цену с выгодами"
+          />
+        </button>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="container benefits">
+        <div class="benefits__item">
+          <img src="/src/images/icons/award.svg" alt="Award" />
+          <div class="benefits__text">
+            <h6>Официальный дилер</h6>
+            <p>Гарантируем высокое качество обслуживания.</p>
+          </div>
+        </div>
+        <div class="benefits__item">
+          <img src="/src/images/icons/clock-rewind.svg" alt="clock-rewind" />
+          <div class="benefits__text">
+            <h6>ПОКУПКА АВТО ЗА 1 ДЕНЬ</h6>
+            <p>Удобный процесс покупки, включая оформление всех документов.</p>
+          </div>
+        </div>
+        <div class="benefits__item">
+          <img
+            src="/src/images/icons/clipboard-check.svg"
+            alt="clipboard-check"
+          />
+          <div class="benefits__text">
+            <h6>ВСЕ КОМПЛЕКТАЦИИ В НАЛИЧИИ</h6>
+            <p>Широкий выбор комплектаций, с полным пакетом документов</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

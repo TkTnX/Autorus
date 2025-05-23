@@ -1,0 +1,44 @@
+$base-oranzhevyy: #ff9549;
+$base-belyy: #fff;
+$base-chernyy-0: #181818;
+$base-chernyy-1: #1c2121;
+$base-chernyy-2: #252c2c;
+$base-seryy: #939697;
+$hover-oranzhevyy: #fe8630;
+$hover-chernyy: #383838;
+$signal-krasnyy: #ff2b00;
+$signal-zelenyy: #00d154;
+$font-family: "TT TANK", sans-serif;
+$container-width: 1326px;
+
+body {
+  font-family: $font-family;
+  color: $base-belyy;
+  background: $base-chernyy-0;
+}
+
+a {
+  color: $base-belyy;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: $base-oranzhevyy;
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: $base-chernyy-0;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    background-color: $hover-oranzhevyy;
+  }
+}

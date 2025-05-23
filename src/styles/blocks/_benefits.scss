@@ -1,0 +1,35 @@
+@use "../base/base" as *;
+.benefits {
+  margin-top: 60px;
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  justify-content: space-between;
+  // .benefits__item
+
+  &__item {
+    border: 1px solid $base-seryy;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+
+  // .benefits__text
+
+  &__text {
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 120%;
+    }
+  }
+}

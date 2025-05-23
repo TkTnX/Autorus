@@ -1,0 +1,39 @@
+.hero {
+  background-color: #999;
+  background-image: url("/src/images/hero.webp");
+  background-position: center center; /* x y */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+
+  // .hero__wrapper
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11px;
+  }
+
+  // .hero__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+
+  // .hero__subtitle
+
+  &__subtitle {
+    font-size: 28px;
+  }
+
+  // .hero__button
+
+  &__button {
+    margin-top: 29px;
+    max-width: max-content;
+  }
+}

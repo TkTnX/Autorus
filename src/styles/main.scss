@@ -1,0 +1,10 @@
+// BASE
+@use "base/reset";
+@use "base/fonts";
+@use "base/base";
+
+// BLOCKS
+@use "blocks/header";
+@use "blocks/hero";
+@use "blocks/timer";
+@use "blocks/benefits";

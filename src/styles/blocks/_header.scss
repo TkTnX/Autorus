@@ -1,0 +1,138 @@
+@use "../base/base" as *;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  padding: 10px 0 20px;
+
+  // .header__wrapper
+
+  &__wrapper {
+    flex: 1;
+  }
+
+  // .header__top
+
+  &__top {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  // .header__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    span {
+      letter-spacing: normal;
+      color: $base-seryy;
+    }
+  }
+  &__control {
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // .header__bottom
+
+  &__bottom {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__info
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h6 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    p {
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  }
+
+  &__devider {
+    width: 1px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  // .header__phone
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  // .header__phone-text
+
+  &__phone-text {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+  }
+
+  // .header__phone-status
+  &__phone-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      color: $base-seryy;
+      font-weight: 300;
+      font-size: 14px;
+      display: block;
+      text-align: right;
+    }
+  }
+
+  // .header__phone-link
+
+  &__phone-link {
+    font-size: 20px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // .header__green-dot
+
+  &__green-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #00d153;
+    border-radius: 100%;
+  }
+
+}
