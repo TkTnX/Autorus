@@ -50,21 +50,83 @@
                 <span>Мы на связи</span>
               </div>
             </div>
-            <a class="button" href="tel:+79999999999">
+            <a class="button header__make-call" href="tel:+79999999999">
               <img
                 src="/src/images/icons/phone-incoming.svg"
                 alt="Заказать звонок"
               />
               Заказать звонок
             </a>
+            <div class="header__phone-buttons--sm">
+              <a href="tel:+79999999999">
+                <img
+                  src="/src/images/icons/phone-incoming-white.svg"
+                  alt="Заказать звонок"
+                />
+              </a>
+              <button id="openMobileMenuBtn">
+                <img src="/src/images/icons/burgerBtn.svg" alt="Open Menu" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="mobile-menu">
+      <h3>АВТОРУСЬ TANK Лосиный Остров</h3>
+      <p class="mobile-menu__subtitle">Официальный дилер</p>
+
+      <div class="header__phone-text mobile-menu__phone">
+        <a class="header__phone-link" href="tel:+79999999999"
+          >+7 (999) 999-99-99</a
+        >
+        <div class="header__phone-status">
+          <div class="header__green-dot"></div>
+          <span>Мы на связи</span>
+        </div>
+      </div>
+
+      <div class="mobile-menu__info">
+        <p class="header__item">
+          <img src="/src/images/icons/marker-pin.svg" alt="Location" />
+          <span>Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</span>
+        </p>
+        <p class="header__item">
+          <img src="/src/images/icons/clock.svg" alt="Clock" />
+          <span>Ежедневно с 09:00 до 21:00</span>
+        </p>
+      </div>
+
+      <a
+        class="button header__make-call mobile-menu__make-call"
+        href="tel:+79999999999"
+      >
+        <img src="/src/images/icons/phone-incoming.svg" alt="Заказать звонок" />
+        Заказать звонок
+      </a>
+
+      <div class="header__controls mobile-menu__controls">
+        <button class="header__item header__control">
+          <img src="/src/images/icons/settings.svg" alt="Записаться" />
+          Записаться на сервис
+        </button>
+        <button class="header__item header__control">
+          <img src="/src/images/icons/speedometer.svg" alt="Тест-драйв" />
+          Тест-драйв
+        </button>
+      </div>
+    </div>
+
     <main>
       <!-- HERO -->
       <section class="hero">
+        <img
+          src="/src/images/hero.webp"
+          alt="Hero small"
+          class="hero__img--sm"
+        />
         <div class="hero__wrapper container">
           <p class="hero__subtitle">Улучшим любые условия</p>
           <h1 class="hero__title">TANK 500</h1>
@@ -86,7 +148,13 @@
           <div class="timer__item">
             <svg class="timer__circle" width="90" height="90">
               <circle class="bg" cx="45" cy="45" r="40" />
-              <circle class="progress" cx="45" cy="45" r="40" />
+              <circle
+                class="progress"
+                id="progressDays"
+                cx="45"
+                cy="45"
+                r="40"
+              />
             </svg>
             <span class="timer__number" id="timerDays">3</span>
             <span class="timer__text">Дней</span>
@@ -95,7 +163,13 @@
           <div class="timer__item">
             <svg class="timer__circle" width="90" height="90">
               <circle class="bg" cx="45" cy="45" r="40" />
-              <circle class="progress" cx="45" cy="45" r="40" />
+              <circle
+                class="progress"
+                id="progressHours"
+                cx="45"
+                cy="45"
+                r="40"
+              />
             </svg>
             <span class="timer__number" id="timerHours">06</span>
             <span class="timer__text">Часов</span>
@@ -105,7 +179,13 @@
           <div class="timer__item">
             <svg class="timer__circle" width="90" height="90">
               <circle class="bg" cx="45" cy="45" r="40" />
-              <circle class="progress" cx="45" cy="45" r="40" />
+              <circle
+                class="progress"
+                id="progressMinutes"
+                cx="45"
+                cy="45"
+                r="40"
+              />
             </svg>
             <span class="timer__number" id="timerMinutes">14</span>
             <span class="timer__text">Минут</span>
@@ -115,7 +195,13 @@
           <div class="timer__item">
             <svg class="timer__circle" width="90" height="90">
               <circle class="bg" cx="45" cy="45" r="40" />
-              <circle class="progress" cx="45" cy="45" r="40" />
+              <circle
+                class="progress"
+                id="progressSeconds"
+                cx="45"
+                cy="45"
+                r="40"
+              />
             </svg>
             <span class="timer__number" id="timerSeconds">55</span>
             <span class="timer__text">Секунд</span>
@@ -157,6 +243,18 @@
           </div>
         </div>
       </section>
+
+      <!-- RENT -->
+      <!-- <section class="container rent">
+        <h2 class="rent__title">
+          Забронируйте автомобиль сегодня и получите дополнительную выгоду 100
+          000 ₽
+        </h2>
+        <div class="rent__cars">
+          <button>
+          </button>
+        </div>
+      </section> -->
     </main>
 
     <script type="module" src="/src/scripts/main.js"></script>

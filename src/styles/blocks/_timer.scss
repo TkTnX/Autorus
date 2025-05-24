@@ -1,18 +1,42 @@
 @use "../base/base" as *;
+@use "../base/mixins" as *;
+
 .timer {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  gap: 100px;
   border-radius: 10px;
   padding: 20px 40px;
   background-color: $base-chernyy-2;
+  justify-content: space-between;
+
+  @include xl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
 
   h2 {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     max-width: 300px;
+
+    @include xl {
+      max-width: unset;
+      grid-column: span 2;
+    }
+
+    @include md {
+      grid-column: span 1;
+      font-size: 28px;
+    }
   }
 
   // .timer__wrapper
@@ -21,11 +45,21 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @include md {
+      justify-content: center;
+      gap: 0px;
+    }
   }
 
   &__devider {
     font-weight: 700;
     font-size: 39px;
+
+    @include md {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
   // .timer__item
@@ -41,6 +75,11 @@
     align-items: center;
     gap: 0;
     line-height: 1;
+
+    @include md {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__circle {
@@ -48,11 +87,22 @@
     top: 0;
     left: 0;
     transform: rotate(-90deg);
+
+    @include md {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   circle {
     fill: none;
     stroke-width: 4;
+
+    @include md {
+      r: 30px;
+      cy: 35px;
+      cx: 35px;
+    }
   }
 
   .bg {
@@ -60,7 +110,7 @@
   }
   .progress {
     stroke: $base-oranzhevyy;
-    stroke-dasharray: 220.2; // TODO: С ПОМОЩЬЮ ЭТОГО ПОТОМ РЕАЛИЗОВАТЬ ТАЙМЕР (2πr = 2 * 3.14 * 40)
+    stroke-dasharray: 220.2;
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.5s ease;
   }
@@ -70,6 +120,10 @@
   &__number {
     font-size: 39px;
     font-weight: 700;
+
+    @include md {
+      font-size: 24px;
+    }
   }
 
   // .timer__text
@@ -77,5 +131,9 @@
   &__text {
     font-size: 12px;
     opacity: 0.6;
+
+    @include md {
+      font-size: 10px;
+    }
   }
 }

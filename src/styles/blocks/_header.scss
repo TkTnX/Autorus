@@ -1,15 +1,36 @@
 @use "../base/base" as *;
+@use "../base/mixins" as *;
 .header {
   display: flex;
   align-items: center;
+
   gap: 32px;
   width: 100%;
-  padding: 10px 0 20px;
+  padding: 10px 15px 20px;
+
+  @include sm {
+    gap: 20px;
+  }
+
+  &--open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $base-chernyy-0;
+  }
 
   // .header__wrapper
 
   &__wrapper {
     flex: 1;
+  }
+
+  &__logo {
+    @include md {
+      max-width: 31px;
+      max-height: 40px;
+    }
   }
 
   // .header__top
@@ -20,6 +41,10 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    @include md {
+      display: none;
+    }
   }
 
   &__controls {
@@ -56,6 +81,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include md {
+      padding-top: 0;
+    }
+  }
+
+  &__phone-buttons--sm {
+    display: none;
+    @include md {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 
   // .header__info
@@ -74,12 +117,28 @@
       opacity: 0.6;
       font-size: 14px;
     }
+
+    @include md {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+
+      h6 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
 
   &__devider {
     width: 1px;
     height: 30px;
     background: rgba(255, 255, 255, 0.2);
+    @include md {
+      display: none;
+    }
   }
 
   // .header__phone
@@ -98,6 +157,15 @@
     flex-direction: column;
     gap: 4px;
     align-items: flex-end;
+    @include lg {
+      display: none;
+    }
+  }
+
+  &__make-call {
+    @include sm {
+      display: none;
+    }
   }
 
   // .header__phone-status
@@ -134,5 +202,4 @@
     background-color: #00d153;
     border-radius: 100%;
   }
-
 }

@@ -1,0 +1,62 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+.mobile-menu {
+  background-color: $base-chernyy-0;
+  position: fixed;
+  inset: 0;
+  top: 78px;
+  z-index: 20;
+  padding: 40px 15px 0;
+  display: none;
+  &--active {
+    display: block;
+  }
+
+  @include sm {
+    top: 70px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    color: $base-seryy;
+  }
+
+  &__phone {
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+
+    a {
+      font-size: 30px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__make-call {
+    margin-top: 80px;
+    display: flex;
+  }
+
+  &__controls {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}

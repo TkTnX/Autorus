@@ -1,10 +1,21 @@
 @use "../base/base" as *;
+@use "../base/mixins" as *;
 .benefits {
   margin-top: 60px;
   display: flex;
   align-items: stretch;
   gap: 24px;
   justify-content: space-between;
+
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
   // .benefits__item
 
   &__item {
@@ -14,6 +25,15 @@
     display: flex;
     align-items: start;
     gap: 20px;
+
+    @include lg {
+      width: 100%;
+      align-items: center;
+    }
+
+    @include md {
+      justify-content: center;
+    }
   }
 
   // .benefits__text
@@ -30,6 +50,10 @@
       font-size: 16px;
       font-weight: 300;
       line-height: 120%;
+
+      @include lg {
+        display: none;
+      }
     }
   }
 }
