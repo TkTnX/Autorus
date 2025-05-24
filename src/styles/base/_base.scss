@@ -44,6 +44,24 @@ a {
     background-color: $hover-oranzhevyy;
   }
 }
+.button-outline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $base-oranzhevyy;
+
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: $base-belyy;
+  transition: all 0.1s ease-in;
+  justify-content: center;
+  text-align: left;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
 
 .no-scroll {
   overflow: hidden;

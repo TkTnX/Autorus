@@ -245,16 +245,231 @@
       </section>
 
       <!-- RENT -->
-      <!-- <section class="container rent">
-        <h2 class="rent__title">
+      <section class="rent">
+        <h2 class="container rent__title">
           Забронируйте автомобиль сегодня и получите дополнительную выгоду 100
           000 ₽
         </h2>
         <div class="rent__cars">
-          <button>
-          </button>
+          <div class="rent__car-preview">
+            <img src="/src/images/cars/red.png" alt="Red Car" />
+            <p>TANK 300</p>
+          </div>
+          <div class="rent__car-preview">
+            <img src="/src/images/cars/silver.png" alt="Silver Car" />
+            <p>TANK 500</p>
+          </div>
         </div>
-      </section> -->
+
+        <div class="rent__car">
+          <div class="container rent__car-wrapper">
+            <div class="rent__car-info">
+              <p class="rent__car-hint">Только в АВТОРУСЬ!</p>
+              <h3 class="rent__car-title">TANK 300</h3>
+              <p class="rent__car-subtitle">Выгода по Trade-In до 450 000 ₽</p>
+              <div class="rent__car-sale">
+                <img src="/src/images/icons/warning.svg" alt="warning" />
+                <p>Ограниченное предложение!</p>
+                <img src="/src/images/icons/warning.svg" alt="warning" />
+              </div>
+              <div class="rent__car-buttons">
+                <button class="button">
+                  Узнать стоимость по акции
+                  <img
+                    src="/src/images/icons/chevron-right.svg"
+                    alt="Узнать стоимость по акции"
+                  />
+                </button>
+                <button class="button-outline">
+                  Тест-драйв
+                  <img
+                    src="/src/images/icons/chevron-right-white.svg"
+                    alt="Тест-драйв "
+                  />
+                </button>
+                <button class="button-outline">
+                  Рассчитать кредит
+                  <img
+                    src="/src/images/icons/chevron-right-white.svg"
+                    alt="Рассчитать кредит"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="rent__car-image-wrapper">
+              <div class="rent__car-image">
+                <img
+                  id="carImage"
+                  src="/src/images/cars/300-red.png"
+                  alt="TANK 300 Red"
+                />
+
+                <div class="rent__car-image-hint">
+                  Осталось 5 автомобилей по спец цене
+                </div>
+              </div>
+              <div class="rent__car-colors" id="carColorsElements"></div>
+            </div>
+          </div>
+          <div class="container rent__car-benefits">
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/clipboard-check-orange.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Автомобили в наличии с ПТС</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/certificate.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Сервисная поддержка до 5 лет / 150 000 км</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/tag.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Улучшим любое предложение</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/sale.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Кредит 0,01%</p>
+            </div>
+          </div>
+          <div class="container rent__car-gallery">
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/1.jpg" alt="Gallery image" />
+            </div>
+
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/2.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/3.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/4.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/5.jpg" alt="Gallery image" />
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO: Доделать второй автомобиль -->
+        <div class="rent__car">
+          <div class="container rent__car-wrapper">
+            <div class="rent__car-info">
+              <p class="rent__car-hint">Только в АВТОРУСЬ!</p>
+              <h3 class="rent__car-title">TANK 300</h3>
+              <p class="rent__car-subtitle">Выгода по Trade-In до 450 000 ₽</p>
+              <div class="rent__car-sale">
+                <img src="/src/images/icons/warning.svg" alt="warning" />
+                <p>Ограниченное предложение!</p>
+                <img src="/src/images/icons/warning.svg" alt="warning" />
+              </div>
+              <div class="rent__car-buttons">
+                <button class="button">
+                  Узнать стоимость по акции
+                  <img
+                    src="/src/images/icons/chevron-right.svg"
+                    alt="Узнать стоимость по акции"
+                  />
+                </button>
+                <button class="button-outline">
+                  Тест-драйв
+                  <img
+                    src="/src/images/icons/chevron-right-white.svg"
+                    alt="Тест-драйв "
+                  />
+                </button>
+                <button class="button-outline">
+                  Рассчитать кредит
+                  <img
+                    src="/src/images/icons/chevron-right-white.svg"
+                    alt="Рассчитать кредит"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="rent__car-image-wrapper">
+              <div class="rent__car-image">
+                <img
+                  id="carImage"
+                  src="/src/images/cars/300-red.png"
+                  alt="TANK 300 Red"
+                />
+
+                <div class="rent__car-image-hint">
+                  Осталось 5 автомобилей по спец цене
+                </div>
+              </div>
+              <div class="rent__car-colors" id="carColorsElements"></div>
+            </div>
+          </div>
+          <div class="container rent__car-benefits">
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/clipboard-check-orange.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Автомобили в наличии с ПТС</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/certificate.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Сервисная поддержка до 5 лет / 150 000 км</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/tag.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Улучшим любое предложение</p>
+            </div>
+            <div class="rent__car-benefit">
+              <img
+                src="/src/images/icons/sale.svg"
+                alt="Автомобили в наличии
+              с ПТС"
+              />
+              <p>Кредит 0,01%</p>
+            </div>
+          </div>
+          <div class="container rent__car-gallery">
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/1.jpg" alt="Gallery image" />
+            </div>
+
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/2.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/3.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/4.jpg" alt="Gallery image" />
+            </div>
+            <div class="rent__car-gallery-img">
+              <img src="/src/images/gallery/5.jpg" alt="Gallery image" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/src/scripts/main.js"></script>
