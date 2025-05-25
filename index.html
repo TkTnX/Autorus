@@ -477,7 +477,7 @@
         </div>
 
         <div id="equipmentList" class="equipment__list">
-          <!-- TODO: Выводить модели из js -->
+          <!-- TODO: Выводить модели из js (в constants добавить доп инфу по моделям и выводить через ту константу) -->
 
           <div class="equipment__item">
             <div class="equipment__item-img">
@@ -611,7 +611,186 @@
           </button>
         </div>
       </section>
+
+      <!-- REQUEST -->
+      <section class="request">
+        <div class="container request__wrapper">
+          <h3 class="request__title">ОСТАВЬТЕ ЗАЯВКУ НА КРЕДИТ</h3>
+          <p class="request__subtitle">и получите одобрение за 1 день!</p>
+          <form class="request__form">
+            <label class="request__form-field">
+              <span>Телефон</span>
+              <input type="tel" placeholder="+7 (___) ___-__-__" />
+            </label>
+            <button class="button">
+              Отправить заявку
+              <img
+                src="/src/images/icons/chevron-right.svg"
+                alt="Отправить заявку"
+              />
+            </button>
+            <label class="request__form-checkbox">
+              <input type="checkbox" />
+              <span>Согласен на обработку персональных данных</span>
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <!-- OFFER -->
+      <section class="container offer">
+        <div class="offer__info">
+          <h3 class="offer_title">
+            Индивидуальное предложение для корпоративных клиентов
+          </h3>
+          <button class="button offer_button">
+            Отправить заявку
+            <img
+              src="/src/images/icons/chevron-right.svg"
+              alt="Отправить заявку"
+            />
+          </button>
+        </div>
+        <div class="offer__person">
+          <img src="/src/images/offer.jpg" alt="Person" />
+          <div>
+            <h6 class="offer__person-title">Татьяна Санникова</h6>
+            <p class="offer__person-subtitle">
+              Отдел корпоративных продаж АВТОРУСЬ
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="container map">
+        <div id="map" class="map__widget"></div>
+        <div class="map__info">
+          <div class="map__info-item">
+            <span>Адрес</span>
+            <h6>Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</h6>
+          </div>
+          <div class="map__info-item">
+            <span>Телефон</span>
+            <h6>+7 (999) 999-99-99</h6>
+            <div class="map__info-item-hint">
+              <div class="map__ifno-item-dot"></div>
+              <p>Мы на связи</p>
+            </div>
+          </div>
+          <div class="map__info-item">
+            <span>Режим работы</span>
+            <h6>Ежедневно с 09:00 до 21:00</h6>
+          </div>
+          <button class="button">
+            Заказать звонок
+            <img
+              src="/src/images/icons/chevron-right.svg"
+              alt="Заказать звонок"
+            />
+          </button>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="container footer">
+      <!-- Дисклеймер -->
+      <div class="footer__disclaimer">
+        <button
+          id="disclaimerButton"
+          class="footer__disclaimer-button footer__disclaimer-button--active"
+        >
+          Дисклеймер
+          <img
+            src="/src/images/icons/chevron-right-white.svg"
+            alt="Открыть дисклемер"
+          />
+        </button>
+        <p
+          id="disclaimerText"
+          class="footer__disclaimer-text footer__disclaimer-text--active"
+        >
+          TANK 300 за 3 799 000руб с учетом поддержек. Цена на модель TANK
+          (ТЭНК) 300 в комплектации Adventure (Эдвенчер) с двигателем 2,0T 4WD,
+          2023 года производства, цвет автомобиля: белый, с учетом выгоды по
+          трейд-ин 300 000 рублей. В трейд-ин принимаются автомобили с пробегом
+          со сроком владения и регистрации (постановки на учет) в органах ГИБДД
+          не менее 6 месяцев (в отношении автомобилей бренда TANK, Haval, Great
+          Wall – 3 месяца) до сдачи автомобиля в трейд-ин. В качестве
+          документов, подтверждающих срок владения сдаваемого в трейд-ин
+          автомобиля, собственнику необходимо предоставить копию ПТС или СТС или
+          карточку учета ТС из ГИБДД с печатью и подписью. Подробности уточняйте
+          у менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не
+          является офертой и действует с 01.04.2024г. <br />
+          TANK 500 за 5 349 000 руб с учетом поддержек. Цена на модель TANK
+          (ТЭНК) 500 в комплектации Adventure (Эдвенчер) с двигателем 3,0T 4WD,
+          2023 года производства, цвет автомобиля: белый, с учетом прямой выгоды
+          в 950 000 рублей. Подробности уточняйте у менеджеров отдела продаж
+          TANK АВТОРУСЬ. Предложение ограничено, не является офертой и действует
+          с 01.04.2024г.
+        </p>
+      </div>
+
+      <!-- FOOTER MAIN -->
+      <div class="footer__main">
+        <div class="footer__main-top">
+          <div class="footer__main-logo">
+            <h6>АВТОРУСЬ TANK Лосиный Остров</h6>
+            <p>Официальный дилер</p>
+          </div>
+          <div class="header__phone">
+            <div class="header__phone-text">
+              <a class="header__phone-link" href="tel:+79999999999"
+                >+7 (999) 999-99-99</a
+              >
+              <div class="header__phone-status">
+                <div class="header__green-dot"></div>
+                <span>Мы на связи</span>
+              </div>
+            </div>
+            <a class="button header__make-call" href="tel:+79999999999">
+              <img
+                src="/src/images/icons/phone-incoming.svg"
+                alt="Заказать звонок"
+              />
+              Заказать звонок
+            </a>
+          </div>
+        </div>
+        <div class="footer__main-center">
+          <p class="header__item">
+            <img src="/src/images/icons/marker-pin.svg" alt="Location" />
+            <span
+              >Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</span
+            >
+          </p>
+          <div class="header__controls">
+            <button class="header__item header__control">
+              <img src="/src/images/icons/settings.svg" alt="Записаться" />
+              Записаться на сервис
+            </button>
+            <button class="header__item header__control">
+              <img src="/src/images/icons/speedometer.svg" alt="Тест-драйв" />
+              Тест-драйв
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__main-bottom">
+          <span>Официальный дилер</span>
+          <p>ООО А АВТОРУСЬ МЫТИЩИ | ОГРН - 1147746695161, ИНН - 7728881903</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2024, АВТОРУСЬ ТАНК</p>
+        <div class="footer__bottom-links">
+          <a href="#">Правовая информация</a>
+          <a href="#">Условия акции</a>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/src/scripts/main.js"></script>
   </body>

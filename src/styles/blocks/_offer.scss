@@ -1,0 +1,104 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+.offer {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+  background: $base-chernyy-1;
+  padding: 40px;
+
+  @include lg {
+    padding: 20px;
+  }
+
+  @include md {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  // .offer_title
+
+  &_title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 550px;
+
+    @include lg {
+      font-size: 28px;
+    }
+
+    @include md {
+      max-width: unset;
+    }
+  }
+
+  // .offer_button
+
+  &_button {
+    margin-top: 40px;
+
+    @include md {
+      width: 100%;
+    }
+  }
+
+  // .offer__person
+
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      border-radius: 100%;
+
+      @include sm {
+        max-width: 90px;
+        max-height: 90px;
+      }
+    }
+
+    @include md {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  // .offer__person-title
+
+  &__person-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  // .offer__person-subtitle
+
+  &__person-subtitle {
+    margin-top: 8px;
+    font-weight: 300;
+    line-height: 140%;
+    color: $base-seryy;
+    max-width: 170px;
+
+    @include md {
+      max-width: unset;
+    }
+
+    @include sm {
+      font-size: 14px;
+    }
+  }
+}

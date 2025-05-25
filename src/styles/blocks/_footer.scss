@@ -1,0 +1,166 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+.footer {
+  margin-top: 100px;
+  // .footer__disclaimer
+
+  &__disclaimer {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $base-seryy;
+  }
+
+  // .footer__disclaimer-button
+
+  &__disclaimer-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      transform: rotate(-90deg);
+      transition: all 0.2s ease-in;
+    }
+
+    &--active {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  // .footer__disclaimer-text
+
+  &__disclaimer-text {
+    margin-top: 26px;
+    font-weight: 300;
+    line-height: 140%;
+    color: $base-seryy;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  // .footer__main
+
+  &__main {
+    padding: 60px 0;
+    border-bottom: 1px solid $base-seryy;
+  }
+
+  // .footer__main-top
+
+  &__main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__main-logo {
+    p {
+      margin-top: 4px;
+      font-weight: 300;
+      font-size: 14px;
+      color: $base-seryy;
+    }
+
+    @include md {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &__main-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .header__phone-text {
+    display: block;
+  }
+
+  .header__controls {
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  .header__phone {
+    @include sm {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 30px 0;
+    }
+  }
+
+  .header__make-call {
+    display: flex;
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  &__main-bottom {
+    margin-top: 40px;
+    span {
+      font-weight: 300;
+      font-size: 14px;
+      color: $base-seryy;
+    }
+    p {
+      font-weight: 300;
+      line-height: 140%;
+    }
+  }
+
+  &__bottom {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-weight: 300;
+      color: $base-seryy;
+    }
+
+    @include sm {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+
+  &__bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    a {
+      font-weight: 300;
+      color: $base-seryy;
+    }
+
+    @include vsm {
+      gap: 0;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

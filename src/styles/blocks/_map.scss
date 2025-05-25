@@ -1,0 +1,89 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+.map {
+  margin-top: 80px;
+  position: relative;
+  border-radius: 10px;
+
+  &__widget {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+  }
+
+  // .map__info
+
+  &__info {
+    position: absolute;
+    bottom: 8px;
+    left: 28px;
+    right: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    background: $base-chernyy-1;
+    padding: 20px 20px 24px;
+
+    @include lg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+      bottom: -60%;
+      transform: translateY(-50%);
+    }
+  }
+
+  // .map__info-item
+
+  &__info-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 325px;
+
+    span {
+      font-weight: 300;
+      font-size: 14px;
+      color: $base-seryy;
+    }
+
+    h6 {
+      font-size: 20px;
+
+      @include md {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .map__info-item-hint
+
+  &__info-item-hint {
+    font-weight: 300;
+    font-size: 14px;
+    color: $base-seryy;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  // .map__ifno-item-dot
+
+  &__ifno-item-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $signal-zelenyy;
+  }
+}

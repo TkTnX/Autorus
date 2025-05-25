@@ -12,5 +12,8 @@
     "sass": "^1.89.0",
     "sass-embedded": "^1.89.0",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "ymaps": "^0.2.1"
   }
 }
