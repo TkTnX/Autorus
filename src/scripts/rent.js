@@ -1,42 +1,44 @@
-const carImage = document.querySelector("#carImage");
-const carColorsElements = document.querySelector("#carColorsElements");
+import { CARS } from "./constants/cars.contant";
 
-const COLORS = [
-  {
-    value: "#ef2929",
-    img: "/src/images/cars/300-red.png",
-  },
-  {
-    value: "#e6e7e8",
-    img: "/src/images/cars/300-orange.png",
-  },
-  {
-    value: "#c6c9ce",
-    img: "/src/images/cars/300-silver.png",
-  },
-  {
-    value: "#df4c30",
-    img: "/src/images/cars/300-black.png",
-  },
-  {
-    value: "#212329",
-    img: "/src/images/cars/300-white.png",
-  },
-];
+const carImages = document.querySelectorAll("#carImage");
+const carColorsElements = document.querySelectorAll("#carColorsElements");
+const carGallery = document.querySelectorAll("#carGallery");
 
-COLORS.map(({ value, img }) => {
-  const carColor = document.createElement("button");
-  carColor.classList.add("rent__car-color");
+CARS.map((car, index) => {
+  car.colors.map(({ value, img }) => {
+    // получение нужных элементов
+    const image = carImages[index];
+    const colors = carColorsElements[index];
+    const gallery = carGallery[index];
 
-  carColor.addEventListener("click", () => {
-    carImage.src = img;
-    carColorsElements
-      .querySelector(".rent__car-color--choosen")
-      .classList.remove("rent__car-color--choosen");
-    carColor.classList.add("rent__car-color--choosen");
+    // создание цветов
+    const color = document.createElement("div");
+    color.classList.add("rent__car-color");
+    color.style.backgroundColor = value;
+    color.addEventListener("click", () => {
+      image.src = img;
+      image.alt = car.name;
+
+      colors
+        .querySelector(".rent__car-color--choosen")
+        .classList.remove("rent__car-color--choosen");
+      color.classList.add("rent__car-color--choosen");
+    });
+
+    // назначение дефолтных значений
+    image.src = car.colors[0].img;
+    image.alt = car.name;
+
+    colors.appendChild(color);
+    colors
+      .querySelectorAll(".rent__car-color")[0]
+      .classList.add("rent__car-color--choosen");
+
+    // создание галереи
+    gallery.innerHTML = car.gallery.map((img) => {
+      return `<div class="rent__car-gallery-img">
+              <img src=${img} alt="Gallery image" />
+            </div>`;
+    });
   });
-
-  carColor.style.backgroundColor = value;
-  carColorsElements.appendChild(carColor);
-  carColorsElements.firstChild.classList.add("rent__car-color--choosen");
 });

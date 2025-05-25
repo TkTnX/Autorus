@@ -345,33 +345,15 @@
               <p>Кредит 0,01%</p>
             </div>
           </div>
-          <div class="container rent__car-gallery">
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/1.jpg" alt="Gallery image" />
-            </div>
-
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/2.jpg" alt="Gallery image" />
-            </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/3.jpg" alt="Gallery image" />
-            </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/4.jpg" alt="Gallery image" />
-            </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/5.jpg" alt="Gallery image" />
-            </div>
-          </div>
+          <div class="container rent__car-gallery" id="carGallery"></div>
         </div>
 
-        <!-- TODO: Доделать второй автомобиль -->
         <div class="rent__car">
           <div class="container rent__car-wrapper">
             <div class="rent__car-info">
               <p class="rent__car-hint">Только в АВТОРУСЬ!</p>
-              <h3 class="rent__car-title">TANK 300</h3>
-              <p class="rent__car-subtitle">Выгода по Trade-In до 450 000 ₽</p>
+              <h3 class="rent__car-title">TANK 500</h3>
+              <p class="rent__car-subtitle">Выгода до 700 000 ₽</p>
               <div class="rent__car-sale">
                 <img src="/src/images/icons/warning.svg" alt="warning" />
                 <p>Ограниченное предложение!</p>
@@ -450,24 +432,183 @@
               <p>Кредит 0,01%</p>
             </div>
           </div>
-          <div class="container rent__car-gallery">
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/1.jpg" alt="Gallery image" />
-            </div>
+          <div class="container rent__car-gallery" id="carGallery"></div>
+        </div>
+      </section>
 
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/2.jpg" alt="Gallery image" />
+      <!-- EQUIPMENT -->
+      <section class="container equipment">
+        <h2 class="equipment__title">ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ</h2>
+
+        <div class="equipment__filters">
+          <label class="equipment__filter">
+            <span>Модель</span>
+            <select>
+              <!-- TODO: Выводить модели из js -->
+              <option value="" selected hidden></option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+            </select>
+          </label>
+          <label class="equipment__filter">
+            <span>Комплектация</span>
+            <select>
+              <!-- TODO: Выводить модели из js -->
+              <option value="" selected hidden></option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+            </select>
+          </label>
+          <label class="equipment__filter">
+            <span>Двигатель</span>
+            <select>
+              <!-- TODO: Выводить модели из js -->
+              <option value="" selected hidden></option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 300">TANK 300</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="equipmentList" class="equipment__list">
+          <!-- TODO: Выводить модели из js -->
+
+          <div class="equipment__item">
+            <div class="equipment__item-img">
+              <img src="/src/images/cars/300-silver.png" alt="Car" />
             </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/3.jpg" alt="Gallery image" />
+            <div class="equipment__item-info">
+              <h6 class="equipment__item-title">TANK 300</h6>
+              <p class="equipment__item-details">
+                2.0 л. Бензин, Полный, Автоматическая
+              </p>
+              <p class="equipment__item-price">3 649 000 ₽</p>
+              <div class="equipment__item-sales">
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/tag.svg" alt="Tag" />
+                  <p>Выгода по Trade-in до 450 000 ₽</p>
+                </div>
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/gift.svg" alt="Gift" />
+                  <p>Керамическое покрытие в подарок!</p>
+                </div>
+              </div>
             </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/4.jpg" alt="Gallery image" />
-            </div>
-            <div class="rent__car-gallery-img">
-              <img src="/src/images/gallery/5.jpg" alt="Gallery image" />
+            <div class="equipment__item-controls">
+              <button class="button">
+                Получить предложение
+                <img
+                  src="/src/images/icons/chevron-right.svg"
+                  alt="Получить предложение"
+                />
+              </button>
+              <button class="button-outline">
+                Тест-драйв
+                <img
+                  src="/src/images/icons/chevron-right-white.svg"
+                  alt="Тест-драйв"
+                />
+              </button>
             </div>
           </div>
+          <div class="equipment__item">
+            <div class="equipment__item-img">
+              <img src="/src/images/cars/300-silver.png" alt="Car" />
+            </div>
+            <div class="equipment__item-info">
+              <h6 class="equipment__item-title">TANK 300</h6>
+              <p class="equipment__item-details">
+                2.0 л. Бензин, Полный, Автоматическая
+              </p>
+              <p class="equipment__item-price">3 649 000 ₽</p>
+              <div class="equipment__item-sales">
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/tag.svg" alt="Tag" />
+                  <p>Выгода по Trade-in до 450 000 ₽</p>
+                </div>
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/gift.svg" alt="Gift" />
+                  <p>Керамическое покрытие в подарок!</p>
+                </div>
+              </div>
+            </div>
+            <div class="equipment__item-controls">
+              <button class="button">
+                Получить предложение
+                <img
+                  src="/src/images/icons/chevron-right.svg"
+                  alt="Получить предложение"
+                />
+              </button>
+              <button class="button-outline">
+                Тест-драйв
+                <img
+                  src="/src/images/icons/chevron-right-white.svg"
+                  alt="Тест-драйв"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="equipment__item">
+            <div class="equipment__item-img">
+              <img src="/src/images/cars/300-silver.png" alt="Car" />
+            </div>
+            <div class="equipment__item-info">
+              <h6 class="equipment__item-title">TANK 300</h6>
+              <p class="equipment__item-details">
+                2.0 л. Бензин, Полный, Автоматическая
+              </p>
+              <p class="equipment__item-price">3 649 000 ₽</p>
+              <div class="equipment__item-sales">
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/tag.svg" alt="Tag" />
+                  <p>Выгода по Trade-in до 450 000 ₽</p>
+                </div>
+                <div class="equipment__item-sale">
+                  <img src="/src/images/icons/gift.svg" alt="Gift" />
+                  <p>Керамическое покрытие в подарок!</p>
+                </div>
+              </div>
+            </div>
+            <div class="equipment__item-controls">
+              <button class="button">
+                Получить предложение
+                <img
+                  src="/src/images/icons/chevron-right.svg"
+                  alt="Получить предложение"
+                />
+              </button>
+              <button class="button-outline">
+                Тест-драйв
+                <img
+                  src="/src/images/icons/chevron-right-white.svg"
+                  alt="Тест-драйв"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container tradeIn">
+        <div class="tradeIn__image">
+          <img src="/src/images/tradeIn.jpg" alt="Trade In" />
+        </div>
+        <div class="tradeIn__text">
+          <h3>ОБМЕН ПО TRADE-IN НА ВЫГОДНЫХ УСЛОВИЯХ</h3>
+          <button class="button">
+            Отправить заявку
+            <img
+              src="/src/images/icons/chevron-right.svg"
+              alt="Отправить заявку"
+            />
+          </button>
         </div>
       </section>
     </main>

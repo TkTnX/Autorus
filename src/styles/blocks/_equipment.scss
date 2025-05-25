@@ -1,0 +1,180 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+.equipment {
+  margin-top: 100px;
+
+  @include sm {
+    margin-top: 80px;
+  }
+
+  // .equipment__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include sm {
+      font-size: 28px;
+    }
+  }
+
+  // .equipment__filters
+
+  &__filters {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include sm {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
+  }
+
+  // .equipment__filter
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+
+    span {
+      font-size: 14px;
+      font-weight: 300;
+      color: $base-seryy;
+    }
+
+    select {
+      border: 1px solid $base-seryy;
+      border-radius: 8px;
+      padding: 14px 20px;
+      background-color: $base-chernyy-2;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  // .equipment__list
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .equipment__item
+
+  &__item {
+    border: 1px solid $base-seryy;
+    border-radius: 10px;
+    padding: 24px;
+
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    position: relative;
+
+    @include xl {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 15px;
+    }
+  }
+
+  // .equipment__item-img
+
+  &__item-img {
+    max-width: 416px;
+    max-height: 237px;
+
+    @include md {
+      max-width: unset;
+    }
+  }
+
+  // .equipment__item-info
+
+  &__item-info {
+  }
+
+  // .equipment__item-title
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+
+
+  }
+
+  // .equipment__item-details
+
+  &__item-details {
+    font-weight: 300;
+    font-size: 18px;
+    color: $base-seryy;
+    margin-top: 6px;
+  }
+
+  // .equipment__item-price
+
+  &__item-price {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    margin-top: 34px;
+  }
+
+  // .equipment__item-sales
+
+  &__item-sales {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+
+    @include lg {
+      flex-direction: column;
+      align-items: start;
+      gap: 12px;
+    }
+  }
+
+  // .equipment__item-sale
+
+  &__item-sale {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  // .equipment__item-controls
+
+  &__item-controls {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include xl {
+      position: static;
+    }
+  }
+}

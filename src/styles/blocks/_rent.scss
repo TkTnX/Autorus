@@ -54,6 +54,29 @@
     &:nth-child(even) {
       background-color: $base-chernyy-2;
       margin-top: 0;
+
+      .rent__car-wrapper {
+        flex-direction: row-reverse;
+
+        @include lg {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+        }
+      }
+
+      .rent__car-colors {
+        right: unset;
+        left: 0;
+
+        @include md {
+          flex-direction: row;
+          bottom: -30px;
+          left: unset;
+          top: unset;
+          right: 50%;
+          transform: translateX(50%) translateY(0);
+        }
+      }
     }
   }
 
@@ -163,6 +186,7 @@
   &__car-image-wrapper {
     max-width: max-content;
     position: relative;
+    align-self: center;
   }
 
   // .rent__car-image-hint
