@@ -1,15 +1,12 @@
 import { CARS } from "./constants/cars.contant";
-
 const carImages = document.querySelectorAll("#carImage");
 const carColorsElements = document.querySelectorAll("#carColorsElements");
-const carGallery = document.querySelectorAll("#carGallery");
 
 CARS.map((car, index) => {
   car.colors.map(({ value, img }) => {
     // получение нужных элементов
     const image = carImages[index];
     const colors = carColorsElements[index];
-    const gallery = carGallery[index];
 
     // создание цветов
     const color = document.createElement("div");
@@ -33,13 +30,5 @@ CARS.map((car, index) => {
     colors
       .querySelectorAll(".rent__car-color")[0]
       .classList.add("rent__car-color--choosen");
-
-    // создание галереи
-    car.gallery.map((img) => {
-      const galleryImg = document.createElement("div");
-      galleryImg.classList.add("rent__car-gallery-img");
-      galleryImg.innerHTML = `<img src=${img} alt="Gallery image" />`;
-      gallery.appendChild(galleryImg);
-    });
   });
 });
