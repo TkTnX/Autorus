@@ -3,11 +3,20 @@
 
 .footer {
   margin-top: 100px;
+
+  @include md {
+    padding-top: 60px;
+  }
   // .footer__disclaimer
 
   &__disclaimer {
     padding-bottom: 60px;
     border-bottom: 1px solid $base-seryy;
+
+    @include sm {
+      padding-bottom: 40px;
+    }
+    
   }
 
   // .footer__disclaimer-button
@@ -41,6 +50,10 @@
     &--active {
       display: block;
     }
+
+    @include sm {
+      font-size: 12px;
+    }
   }
 
   // .footer__main
@@ -48,6 +61,10 @@
   &__main {
     padding: 60px 0;
     border-bottom: 1px solid $base-seryy;
+
+    @include sm {
+      padding: 40px 0;
+    }
   }
 
   // .footer__main-top
@@ -59,7 +76,7 @@
 
     @include md {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       gap: 10px;
     }
   }
@@ -98,6 +115,7 @@
   .header__controls {
     @include sm {
       flex-direction: column;
+      gap: 24px;
     }
   }
 
@@ -106,7 +124,8 @@
       flex-direction: column;
       gap: 10px;
       width: 100%;
-      padding: 30px 0;
+      margin-top: 40px;
+      align-items: flex-start;
     }
   }
 
@@ -114,6 +133,13 @@
     display: flex;
     @include sm {
       width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .header__phone-link {
+    @include sm {
+      font-size: 30px;
     }
   }
 

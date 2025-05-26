@@ -2,6 +2,10 @@
 @use "../base/mixins" as *;
 .rent {
   margin-top: 100px;
+
+  @include sm {
+    margin-top: 60px;
+  }
   // .rent__title
 
   &__title {
@@ -12,10 +16,6 @@
 
     @include sm {
       font-size: 28px;
-    }
-
-    @include vsm {
-      font-size: 20px;
     }
   }
 
@@ -29,6 +29,7 @@
 
     @include sm {
       gap: 0;
+      margin-top: 20px;
     }
   }
 
@@ -48,6 +49,7 @@
     padding: 80px 0 60px;
 
     @include sm {
+      margin-top: 49px;
       padding: 80px 0 20px;
     }
 
@@ -284,6 +286,8 @@
     @include sm {
       display: flex;
       flex-direction: column;
+      margin-top: 24px;
+      gap: 4px;
     }
   }
 
@@ -311,6 +315,10 @@
     gap: 24px;
     overflow-y: auto;
     padding-bottom: 20px;
+
+    @include sm {
+      margin-top: 24px;
+    }
   }
 
   &__car-gallery-img {

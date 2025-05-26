@@ -1,6 +1,19 @@
 export const CARS = [
   {
     name: "TANK 300",
+    preview: "/src/images/cars/300-silver.png",
+    variants: [
+      {
+        name: "TANK 300 - Базовый",
+        price: "4 000 000",
+        engine: "1.0T",
+      },
+      {
+        name: "TANK 300 - Adventure",
+        price: "4 500 000",
+        engine: "3.0T",
+      },
+    ],
     colors: [
       {
         value: "#ef2929",
@@ -33,6 +46,20 @@ export const CARS = [
   },
   {
     name: "TANK 500",
+    preview: "/src/images/cars/500-silver.png",
+
+    variants: [
+      {
+        name: "TANK 500 - Базовый",
+        price: "7 000 000",
+        engine: "1.0T",
+      },
+      {
+        name: "TANK 500 - Adventure",
+        price: "7 500 000",
+        engine: "3.0T",
+      },
+    ],
     colors: [
       {
         value: "#b0a798",

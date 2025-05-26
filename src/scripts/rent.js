@@ -35,10 +35,11 @@ CARS.map((car, index) => {
       .classList.add("rent__car-color--choosen");
 
     // создание галереи
-    gallery.innerHTML = car.gallery.map((img) => {
-      return `<div class="rent__car-gallery-img">
-              <img src=${img} alt="Gallery image" />
-            </div>`;
+    car.gallery.map((img) => {
+      const galleryImg = document.createElement("div");
+      galleryImg.classList.add("rent__car-gallery-img");
+      galleryImg.innerHTML = `<img src=${img} alt="Gallery image" />`;
+      gallery.appendChild(galleryImg);
     });
   });
 });

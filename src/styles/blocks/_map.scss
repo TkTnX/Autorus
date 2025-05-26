@@ -5,6 +5,10 @@
   margin-top: 80px;
   position: relative;
   border-radius: 10px;
+  
+  @include sm {
+    margin-top: 60px;
+  }
 
   &__widget {
     overflow: hidden;

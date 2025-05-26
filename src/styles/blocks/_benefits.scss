@@ -16,6 +16,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  @include sm {
+    gap: 10px;
+  }
+
   // .benefits__item
 
   &__item {

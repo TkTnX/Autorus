@@ -22,6 +22,10 @@
     width: 100%;
   }
 
+  @include sm {
+    margin-top: 60px;
+  }
+
   // .offer_title
 
   &_title {

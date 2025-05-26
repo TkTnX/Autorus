@@ -1,3 +1,4 @@
+@use "../base/mixins" as *;
 $base-oranzhevyy: #ff9549;
 $base-belyy: #fff;
 $base-chernyy-0: #181818;
@@ -67,3 +68,34 @@ a {
   overflow: hidden;
 }
 
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  span {
+    font-weight: 300;
+    font-size: 14px;
+    color: $base-seryy;
+  }
+
+  input,
+  select {
+    border: 1px solid $base-seryy;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 14px;
+
+    &::placeholder {
+      color: $base-seryy;
+    }
+  }
+
+  option {
+    background-color: $base-chernyy-0;
+  }
+
+  @include md {
+    width: 100%;
+  }
+}
